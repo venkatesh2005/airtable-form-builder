@@ -8,4 +8,4 @@
   publish = "build"
 
 [build.environment]
-  REACT_APP_API_URL = ""
+  REACT_APP_API_URL = "https://airtable-formbuilder-api.onrender.com"
