@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "AIRTABLE_CLIENT_ID": "@airtable_client_id",
+    "AIRTABLE_CLIENT_SECRET": "@airtable_client_secret",
+    "AIRTABLE_REDIRECT_URI": "@airtable_redirect_uri",
+    "FRONTEND_URL": "@frontend_url",
+    "SESSION_SECRET": "@session_secret",
+    "NODE_ENV": "production"
+  }
+}
