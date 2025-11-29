@@ -61,7 +61,3 @@ Backend: https://airtable-formbuilder-api.onrender.com
 - Single select
 - Multiple select  
 - File attachments
-
-## License
-
-MIT
