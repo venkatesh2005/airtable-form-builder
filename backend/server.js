@@ -13,6 +13,8 @@ const webhookRoutes = require('./routes/webhooks');
 
 const app = express();
 
+app.set('trust proxy', 1);
+
 const allowedOrigins = process.env.NODE_ENV === 'production'
   ? [process.env.FRONTEND_URL]
   : [process.env.FRONTEND_URL || 'http://localhost:3000', 'http://localhost:3000'];
