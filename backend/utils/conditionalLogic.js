@@ -1,9 +1,3 @@
-/**
- * Pure function to evaluate conditional logic rules
- * @param {Object|null} rules - Conditional rules object with logic and conditions
- * @param {Object} answersSoFar - Current form answers
- * @returns {boolean} - Whether the question should be shown
- */
 function shouldShowQuestion(rules, answersSoFar) {
   // If no rules, always show the question
   if (!rules || !rules.conditions || rules.conditions.length === 0) {
@@ -28,12 +22,6 @@ function shouldShowQuestion(rules, answersSoFar) {
   return true;
 }
 
-/**
- * Evaluate a single condition
- * @param {Object} condition - Single condition with questionKey, operator, and value
- * @param {Object} answersSoFar - Current form answers
- * @returns {boolean} - Whether condition is met
- */
 function evaluateCondition(condition, answersSoFar) {
   const { questionKey, operator, value } = condition;
   

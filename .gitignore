@@ -17,3 +17,6 @@ dist/
 .env.production
 coverage/
 .nyc_output/
+
+# Local Netlify folder
+.netlify

@@ -1,10 +1,5 @@
 const axios = require('axios');
 
-/**
- * Refresh Airtable access token using refresh token
- * @param {String} refreshToken - The refresh token
- * @returns {Object} New token data
- */
 async function refreshAccessToken(refreshToken) {
   try {
     const response = await axios.post(
@@ -29,11 +24,6 @@ async function refreshAccessToken(refreshToken) {
   }
 }
 
-/**
- * Check if token is expired or about to expire
- * @param {Date} expiresAt - Token expiration date
- * @returns {Boolean}
- */
 function isTokenExpired(expiresAt) {
   if (!expiresAt) return true;
   
