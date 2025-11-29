@@ -14,7 +14,7 @@ services:
       - key: PORT
         value: 10000
       - key: MONGODB_URI
-        value: mongodb+srv://venkat42005_db_user:NfspxYE0a96KjElk@cluster0.lvdaz.mongodb.net/airtable-form-builder?retryWrites=true&w=majority
+        value: mongodb+srv://venkat42005_db_user:WtuzlOQoHK3WK1vc@cluster0.lvdaz.mongodb.net/airtable-form-builder?retryWrites=true&w=majority
       - key: AIRTABLE_CLIENT_ID
         value: 801aa715-56de-48ff-aa24-d9ae75d25d8b
       - key: AIRTABLE_CLIENT_SECRET
